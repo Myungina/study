@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-
+ul, li, ol{
+  position:relative;
+  list-style:none
+}
 .section{
   width:100%;
   min-width:450px;
@@ -34,7 +37,6 @@ code {
 }
 .header{
   padding:0 10px;
-  border-bottom:1px solid #eeeeee;
 }
 
 .footer{
@@ -42,4 +44,35 @@ code {
   border-top:1px solid #eeeeee;
   background:#eeeeee;
   text-align:left
+}
+
+.nav{
+  width:auto;
+  overflow:hidden;
+}
+.nav li{
+  float:left;
+  padding:10px 20px;
+  margin-right:20px;
+  cursor:pointer
+}
+
+.nav li:after{
+  position:absolute;
+  display: block;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:2px;
+  content:'';
+  background:#fdc6d3;
+}
+.nav li:last-child{
+  margin-right:0;
+  border-right:none;
+}
+
+.nav li:hover:after{
+  width:100%;
+  transition: all 0.3s;
 }
