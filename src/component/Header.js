@@ -1,11 +1,10 @@
+import {BrowserRouter  as Router, Route, Routes , Link , NavLink}  from "react-router-dom";
 import Menu from './Menu';
 export default function Header(){
     return(
         <div className="wrap header">
-           <div className="inner">
-            <h1>Ina</h1>
+            <NavLink to="/"><h1>Ina</h1></NavLink>
             <Menu/>
-           </div>
         </div>
     )
 }
