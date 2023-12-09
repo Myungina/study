@@ -4,11 +4,34 @@ const Data = [
         birthday: "1991.04.25",
         mail:"dlsdk0425@naver.com"
     },
-    {
-        front : "html , css , jQuery , node , React ",
-        back : "PHP , SQL , ajax , axios ",
-        etc : "Git , photoshop , Illust , zeplin"
-    },
+    [
+        {
+            skill: 'html/css',
+            level: 90,
+            txt:""
+        },
+        {
+            skill: 'jQuery',
+            level: 90,
+            txt:"animation작업 , slide등 UI 작업 다수"
+        },
+        {
+            skill: 'php',
+            level: 70,
+            txt:"ajax api 작업 경험 있음."
+        },
+        {
+            skill: 'node',
+            level: 50,
+            txt:"node 기반의 싱글페이지 작업 경험 있음."
+        },
+        {
+            skill: 'react',
+            level: 20,
+            txt:"개인 포트폴리오 작업"
+        }
+        
+    ],
     [
         {
             thum:"port_img1",

@@ -35,13 +35,17 @@ export const options = {
   }  
 };
 
-const labels = ["html/css", "jQuery", "php" ,  "node.js" , "react"];  
+const labels = Data[1].map((val) => {
+                return val.skill;
+              });
 export const data = {
   labels,
   datasets: [
     {
       label:'Level',
-      data: [90 , 90 , 70 , 60 , 20],
+      data: Data[1].map((val) => {
+            return val.level;
+          }),
       barThickness: 20,
       borderColor: '#7ecfc2',
       backgroundColor: '#9ee7dc',
@@ -71,9 +75,7 @@ export default function Content(){
                                 </ul>
                                 <h3 className='sub_title'>Skill</h3>
                                 <p>
-                                    {items[1].front}<br/>
-                                    {items[1].back}<br/>
-                                    {items[1].etc}<br/>
+                                    
                                 </p>
                             </div> 
                         </td>
