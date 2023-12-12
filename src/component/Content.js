@@ -73,10 +73,6 @@ export default function Content(){
                                     <li>{items[0].birthday}</li>
                                     <li>{items[0].mail}</li>
                                 </ul>
-                                <h3 className='sub_title'>Skill</h3>
-                                <p>
-                                    
-                                </p>
                             </div> 
                         </td>
                     </tr>
