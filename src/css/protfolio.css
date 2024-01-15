@@ -1,0 +1,19 @@
+.worklist{
+    margin:0 auto;
+}
+.worklist li{
+    border-bottom:1px solid #dddddd;
+    padding:20px; 
+    box-sizing: border-box;
+}
+.worklist li:hover{
+    background: #fef2f4;
+}
+.worklist .title{
+    font-size:13px;
+    font-weight: bold;
+}
+.info_wrap{
+    height:0;
+    overflow:hidden;
+}

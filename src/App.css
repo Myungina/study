@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,7 +25,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   box-sizing:border-box;
-  font-size:14px;
+  font-family: 'SUIT-Regular';
+  font-size:12px;
   font-weight: normal;
   text-decoration: none;
   color:#333333;

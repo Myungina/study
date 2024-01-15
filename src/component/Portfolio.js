@@ -2,35 +2,32 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Worklist from './Worklist';
+import $ from 'jquery';
+import '../css/protfolio.css';
 
 export default function Portfolio(){
-
-        
-    const [work] = useState(Worklist);
-    const [company] = useState(work[0]);
-    const [work_list] = useState(work[1]);
-    const [companyId, setIndex] = useState(99);
-
+    function detail(e){
+        console.log(e.target.children)
+    }
     return(
         <div className="section">
         <Header/>
-            <div className="wrap content">
-                <div className="inner">
-                    <ul className="tab">
-                        {company.map(item  => (
-                            <li key={company.com_id} className= {companyId === item.com_id ? 'active' : null}
-                                onClick={() => setIndex(item.com_id)}>
-                                {item.name}
-                            </li> 
-                        )) }
-                    </ul>
-                    {company.filter(item => companyId === item.com_id).map(item => (
-                        <div className="">
-                            {work_list.map((val) => <li>{val.name}</li>)}
-                        </div>
+        <div className="wrap content">
+            <div className="inner">
+                <ul className='overhidden worklist'>
+                    {Worklist[1].map((it)=>(
+                        <li className="fl w_50" onClick={detail}> 
+                            <h4 className="title">{it.title}</h4>
+                            <p>{it.skill}</p>
+                            <div className="info_wrap">
+                                <p>{it.discription}</p>
+                                
+                            </div>
+                        </li>
                     ))}
-                </div>
+                </ul>                
             </div>
+        </div>
         <Footer/>
         </div>
     )

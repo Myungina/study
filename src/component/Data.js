@@ -29,28 +29,13 @@ const Data = [
             skill: 'react',
             level: 20,
             txt:"개인 포트폴리오 작업"
+        },
+        {
+            skill: '그누보드',
+            level: 80,
+            txt:"그누보드 기반홈페이지 구축"
         }
         
     ],
-    [
-        {
-            thum:"port_img1",
-            title:"포폴1",
-            subtitle:"포폴 한줄 설명",
-            date: "2022.11 ~ 2023.12",
-            member:"1",
-            project_skill:"html , css , jQuery ",
-            url:"http://naver.com"
-        },
-        {
-            thum:"port_img1",
-            title:"포폴2",
-            subtitle:"포폴 한줄 설명",
-            date: "2022.11 ~ 2023.12",
-            member:"1",
-            project_skill:"html , css , jQuery ",
-            url:"http://naver.com"
-        }
-    ]
 ]
 export default Data;

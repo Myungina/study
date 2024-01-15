@@ -13,7 +13,7 @@ const Worklist=[
             name: '테이크원컴퍼니'
         }
     ],
-    {
+    [{
         id:0,
         title:'상품페이지 퍼블리싱',
         company:'에듀라인',
@@ -101,6 +101,6 @@ const Worklist=[
         discription:'게임 브랜딩페이지 공용게시판 신규작업',
         url:'https://github.com/Myungina/mywork/blob/main/board.js',
         img:'no-img'
-    }
+    }]
 ]
 export default Worklist;
