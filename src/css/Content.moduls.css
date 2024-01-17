@@ -5,3 +5,16 @@
     padding:20px;
     border-bottom:1px solid #888888;
 }
+.table_wrap b{
+    color:#ec708d;
+    font-weight:700;
+}
+.table_wrap i{
+    font-style:normal
+}
+
+@media screen and (max-width:520px) {
+    .table_wrap{
+        width:100%;
+    }
+}

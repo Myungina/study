@@ -1,6 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import Data from "./Data.js";
-import style from "../css/Content.moduls.css";
+import "../css/Content.moduls.css";
 import ProfileImg from "../img/profile_img.png";
 import {
     Chart as ChartJS,
@@ -72,25 +72,26 @@ export default function Content(){
                                     <li>{items[0].name}</li>
                                     <li>{items[0].birthday}</li>
                                     <li>{items[0].mail}</li>
+                                    <li>{items[0].ex}</li>
                                 </ul>
                             </div> 
                         </td>
                     </tr>
                     <tr>
                       <td colSpan={"2"}                      >
-                        <h3 className='sub_title'>Experience </h3>
-                        <div className='mgb10 overhidden border_l pdl10'>
+                        <h3 className='sub_title '>Experience </h3>
+                        <div className='mgt20 mgb20 overhidden border_l pdl10'>
                           <div className='fl w_40'>
-                            에듀라인<br></br><b>2018 ~ 2018</b>
+                            <b>에듀라인</b><br></br><i>2018 ~ 2018</i>
                           </div>
                           <div className="fl w_60">
                           - 사내 상품페이지 디자인 및 퍼블리싱<br></br>
                           - 신규 사업, 이벤트 페이지 퍼블리싱
                           </div>
                         </div>
-                        <div className='mgb10 overhidden border_l pdl10'>
+                        <div className='mgb20 overhidden border_l pdl10'>
                           <div className='fl w_40'>
-                          시대고시기획<br></br><b>2019 ~ 2021</b>
+                          <b>시대고시기획</b><br></br><i>2019 ~ 2021</i>
                           </div>
                           <div className="fl w_60">
                           - 사내 상품페이지 퍼블리싱<br></br>
@@ -100,7 +101,7 @@ export default function Content(){
                         </div>
                         <div className='overhidden border_l pdl10'>
                           <div className='fl w_40'>
-                            테이크원컴퍼니<br></br><b>2021 ~ 2023</b>
+                            <b>테이크원컴퍼니</b><br></br><i>2021 ~ 2023</i>
                           </div>
                           <div className="fl w_60">
                           - 신규사업 브랜딩페이지 구축<br></br>
@@ -116,6 +117,9 @@ export default function Content(){
                             <div style={{textAlign:"center"}}>
                             <Bar options={options} data={data}/>
                             </div>
+                            <p className='mgt20'>
+                             <b>and : </b>  ajax , restAPI , Mysql , 
+                            </p>
                         </td>
                     </tr>
                     </tbody>

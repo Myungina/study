@@ -2,6 +2,8 @@
     margin:0 auto;
 }
 .worklist li{
+    float:left;
+    width:50%;
     border-bottom:1px solid #dddddd;
     padding:20px; 
     box-sizing: border-box;
@@ -16,4 +18,11 @@
 .info_wrap{
     height:0;
     overflow:hidden;
+}
+
+@media screen and (max-width:460px) {
+    .worklist li{
+        float:none;
+        width:100%;
+    }
 }

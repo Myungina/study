@@ -16,7 +16,7 @@ export default function Portfolio(){
             <div className="inner">
                 <ul className='overhidden worklist'>
                     {Worklist[1].map((it)=>(
-                        <li className="fl w_50" onClick={detail}> 
+                        <li className="" onClick={detail}> 
                             <h4 className="title">{it.title}</h4>
                             <p>{it.skill}</p>
                             <div className="info_wrap">

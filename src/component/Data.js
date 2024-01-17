@@ -2,7 +2,8 @@ const Data = [
     {
         name : "명인아",
         birthday: "1991.04.25",
-        mail:"dlsdk0425@naver.com"
+        mail:"dlsdk0425@naver.com",
+        ex:"총 경력 6년"
     },
     [
         {
@@ -14,6 +15,11 @@ const Data = [
             skill: 'jQuery',
             level: 90,
             txt:"animation작업 , slide등 UI 작업 다수"
+        },
+        {
+            skill: 'javascript',
+            level: 90,
+            txt:"UI 작업 다수"
         },
         {
             skill: 'php',

@@ -6,7 +6,6 @@ export default function Menu(){
             <ul className="nav">
                 <li><NavLink to="/"  className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>profile</NavLink></li>
                 <li><NavLink to="/Portfolio" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>portfolio</NavLink></li>
-                <li><NavLink to="/Etc" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}> etc</NavLink></li>
             </ul>
         </div>
     )
