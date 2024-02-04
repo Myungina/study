@@ -51,7 +51,23 @@
   text-align:left
 }
 
+.style_dash li{
+  position:relative;
+  padding-left:12px;
+}
+.style_dash li:after{
+  position:absolute;
+  display:block;
+  width:7px;
+  height:1px;
+  background:#d79db5;
+  left:0;
+  top:calc(50% - 1px);
+  content:'';
+}
+
 /*margin*/
+.mgt0{margin-top:0px;}
 .mgt10{margin-top:10px;}
 .mgb10{margin-bottom:10px;}
 .mgr10{margin-right:10px;}
@@ -76,12 +92,6 @@
 .tl{text-align:left;}
 .tr{text-align:right;}
 
-.sub_title{
-  margin:10px auto 5px;
-  font-size:15px;
-  font-weight:600;
-  color:#ed4d8f;
-}
 
 
 @media screen and(max-width:520px) {

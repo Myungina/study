@@ -13,6 +13,36 @@
     font-style:normal
 }
 
+.sub_title{
+    margin:0 auto 5px;
+    font-size:15px;
+    font-weight:600;
+    color:#ed4d8f;
+  }
+.txt_point{
+    position:relative;
+    display:inline-block;
+    vertical-align: middle;
+    padding:0 3px;
+    font-weight:900    
+}
+.txt_point:after{
+    position:absolute;
+    display:block;
+    content:'';
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    background:#ec708d;
+    left:-1px;
+    bottom:3px;
+    animation: bounce 0.6s infinite alternate;
+}
+@keyframes bounce{
+    to{
+        transform: translateY(-8px);
+    }
+}
 @media screen and (max-width:520px) {
     .table_wrap{
         width:100%;

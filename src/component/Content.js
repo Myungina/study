@@ -72,6 +72,7 @@ export default function Content(){
                                     <li>{items[0].name}</li>
                                     <li>{items[0].birthday}</li>
                                     <li>{items[0].mail}</li>
+                                    <li>{items[0].ph}</li>
                                     <li>{items[0].ex}</li>
                                 </ul>
                             </div> 
@@ -79,7 +80,11 @@ export default function Content(){
                     </tr>
                     <tr>
                       <td colSpan={"2"}                      >
-                        <h3 className='sub_title '>Experience </h3>
+                        <div className="overhidden">
+                          <h3 className='fl sub_title mgt0'>Experience </h3>
+                          <a href="https://sky-soprano-139.notion.site/Experience-e94e238fe03b460fb85cd97a20da0adf?pvs=4" target='_blank' className="fr txt_point">경력 기술서</a> 
+                        </div>
+                        
                         <div className='mgt20 mgb20 overhidden border_l pdl10'>
                           <div className='fl w_40'>
                             <b>에듀라인</b><br></br><i>2018 ~ 2018</i>
