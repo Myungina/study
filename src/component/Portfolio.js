@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Worklist from './Worklist';
-import '../css/Popup.css';
 import $ from 'jquery';
 import '../css/protfolio.css';
+
 
 export default function Portfolio(){
     const [showPopup, setShowPopup ] = useState(false);
     const [datailTxt, setdatailTxt ] = useState(null);
-    console.log(datailTxt);
+
     function detail(e){
         if(showPopup == false){
-            var idx = e.target.dataset.id;            
-            setdatailTxt(Worklist[1][idx]);
+            var idx = e.target.dataset.id;   
+            var total = Worklist[1].length ;            
+            var target = total-idx;
+            setdatailTxt(Worklist[1][target]);
         }                
         setShowPopup(!showPopup) ;
     }
@@ -23,10 +25,11 @@ export default function Portfolio(){
         <div className="wrap content">
             <div className="inner">
                 <ul className='overhidden worklist'>
-                    {Worklist[1].map((it , idx)=>(
+                    {Worklist[1].map((it)=>(
                         <li key={it.id} > 
-                            <div className="img_wrap">
-                                <img src={ require('../img/no-img.png') } alt="port_img"/>
+                            <div className="img_wrap">                                
+                                <img src={it.img } alt="port_img"/>
+                                
                             </div>
                             <h4 className="title" >{it.title}</h4>
                             <p>{it.skill}</p>
@@ -40,35 +43,25 @@ export default function Portfolio(){
         <Footer/>
         {showPopup ? (
         <div className="popupBg">
-        <div className="popupWrap">
+        <div className="popupWrap" onClick={detail}>
             <div className="popupContent">
                 <div className="popupHeader">
                     <h4 className="fl title">{datailTxt.title}</h4>
                     <button className="fr popupClose"  onClick={detail}>X</button>
                 </div>
                 <div className="popupTxt">
-                    <table>
-                        <tr>
-                            <th>회사명</th>
-                            <td>{datailTxt.company}</td>
-                        </tr>
-                        <tr>
-                            <th>사용스킬</th>
-                            <td>{datailTxt.skill}</td>
-                        </tr>
-                        <tr>
-                            <th>URL</th>
-                            <td>
-                            {datailTxt.url.map(txtArr => (
-                                <a href={txtArr} className="mgr10" target="_blank">{txtArr}</a>
-                            ))}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>GIT</th>
-                            <td>{datailTxt.git}</td>
-                        </tr>
-                    </table>
+                    <ul>
+                        <li><b>사용스킬 : </b>{datailTxt.skill}</li>
+                        <li><b>URL : </b>{datailTxt.url.map(txtArr => (
+                                    <a href={txtArr} className="mgr10" target="_blank">사이트 바로가기</a>
+                                ))}
+                        </li>
+                        {datailTxt.git === '' 
+                        ?<li></li>
+                        :<li><b>Git : </b>{datailTxt.git}</li>
+                        }
+                        
+                    </ul>
                     <div className="mgt15 subTxt">
                         <ul className="style_dash">
                         {datailTxt.txt.map(txtArr => (

@@ -2,7 +2,7 @@ export default function Footer(){
     return(
         <div className="wrap footer">
             <div className="inner">
-                Footer
+                <p>ina0425.dothome.co.kr</p>
             </div>
         </div>
     )

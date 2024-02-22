@@ -48,7 +48,11 @@
   padding:10px 10px;
   border-top:1px solid #eeeeee;
   background:#eeeeee;
-  text-align:left
+  text-align:left;
+}
+.footer p {
+  text-align:right;
+  color:#a7a7a7;
 }
 
 .style_dash li{
