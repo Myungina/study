@@ -14,9 +14,10 @@ export default function Portfolio(){
         if(showPopup == false){
             var idx = e.target.dataset.id;   
             var total = Worklist[1].length ;            
-            var target = total-idx;
+            var target = total-idx-1;
+
             setdatailTxt(Worklist[1][target]);
-        }                
+        }              
         setShowPopup(!showPopup) ;
     }
     return(
@@ -52,8 +53,8 @@ export default function Portfolio(){
                 <div className="popupTxt">
                     <ul>
                         <li><b>사용스킬 : </b>{datailTxt.skill}</li>
-                        <li><b>URL : </b>{datailTxt.url.map(txtArr => (
-                                    <a href={txtArr} className="mgr10" target="_blank">사이트 바로가기</a>
+                        <li><b>URL : </b>{datailTxt.url.map((thisUrl , index)  => (
+                                    <a href={thisUrl} className="mgr10" target="_blank">View</a>
                                 ))}
                         </li>
                         {datailTxt.git === '' 

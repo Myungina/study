@@ -15,18 +15,18 @@ const Worklist=[
     ],
     [
     {
-        id:10,
-        title:'시대에듀 상품홈페이지 개설',
-        company:'시대고시기획',
-        skill:'html , css , jQuery , php , 그누보드',
-        discription:'개별상품 홈페이지 개설 및 리뉴얼/유지보수',
-        git:'',
-        url:['https://www.sdedu.co.kr/cp/?cat_id=001063','https://www.sdedu.co.kr/cp/?cat_id=001067','https://www.sdedu.co.kr/cp/?cat_id=005001','https://www.sdedu.co.kr/cp/?cat_id=001110'],
-        img:require('../img/sd_index.png'),
-        txt:['상품별 홈페이지 개설' , '동영상 상품 연관 도서 리스트 공통사용 js생성','swiper를 이용한 슬라이드 스크립트 생성']
-    },
+            id:11,
+            title:'포트폴리오',
+            company:'-',
+            skill:'html , css , jQuery , react',
+            discription:'개인 포트폴리오사이트',
+            git:'https://github.com/Myungina/mywork/blob/main/board.js',
+            url:[''],
+            img:require('../img/bptg_board.png'),
+            txt:['반응형 페이지 UI작업','사내 프로젝트 브랜딩 사이트 게시판 모듈화 작업','공통 js파일을 만들어 import하고, 각 페이지에서 개별 옵션을 설정 할 수 있도록 기능 개발']
+        },
     {
-        id:9,
+        id:10,
         title:'브랜딩페이지 게시판 모듈화',
         company:'테이크원컴퍼니',
         skill:'html , css , jQuery , node.js',
@@ -37,7 +37,7 @@ const Worklist=[
         txt:['반응형 페이지 UI작업','사내 프로젝트 브랜딩 사이트 게시판 모듈화 작업','공통 js파일을 만들어 import하고, 각 페이지에서 개별 옵션을 설정 할 수 있도록 기능 개발']
     },
     {
-        id:8,
+        id:9,
         title:'CMS NFT 관리자페이지',
         company:'테이크원컴퍼니',
         skill:'html , css , node.js , mySQL',
@@ -46,6 +46,17 @@ const Worklist=[
         url:[''],
         img:require('../img/no-img.png'),
         txt:['NFT 관리자 전용 페이지 작업','txt파일 변환 스크립트']
+    },
+    {
+        id:8,
+        title:'시대에듀 상품홈페이지 개설',
+        company:'시대고시기획',
+        skill:'html , css , jQuery , php , 그누보드',
+        discription:'개별상품 홈페이지 개설 및 리뉴얼/유지보수',
+        git:'',
+        url:['https://www.sdedu.co.kr/cp/?cat_id=001063','https://www.sdedu.co.kr/cp/?cat_id=001067','https://www.sdedu.co.kr/cp/?cat_id=005001','https://www.sdedu.co.kr/cp/?cat_id=001110'],
+        img:require('../img/sd_index.png'),
+        txt:['상품별 홈페이지 개설' , '동영상 상품 연관 도서 리스트 공통사용 js생성','swiper를 이용한 슬라이드 스크립트 생성']
     },
     {
         id:7,

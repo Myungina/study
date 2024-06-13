@@ -112,17 +112,21 @@
 .subTxt{
     margin-top:10px;
 }
-
+@media screen and (max-width:1024px) {
+    .worklist li{
+        max-height:300px;
+    }
+}
 @media screen and (max-width:678px) {
     .worklist li{
         width:calc(50% - 10px);
+        height:auto;
+        max-height:500px;
     }
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:500px) {
     .worklist li{
         float:none;
         width:100%;
-        height:auto;
-        max-height:500px;
     }
 }
