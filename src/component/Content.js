@@ -35,7 +35,7 @@ export const options = {
   }  
 };
 
-const labels = Data[1].map((val) => {
+const labels = Data[0].map((val) => {
                 return val.skill;
               });
 export const data = {
@@ -43,7 +43,7 @@ export const data = {
   datasets: [
     {
       label:'Level',
-      data: Data[1].map((val) => {
+      data: Data[0].map((val) => {
             return val.level;
           }),
       barThickness: 20,
@@ -68,13 +68,11 @@ export default function Content(){
                         </td>
                         <td>
                             <div className="fl tl">
-                                <ul className="list-dot">
-                                    <li>{items[0].name}</li>
-                                    <li>{items[0].birthday}</li>
-                                    <li>{items[0].mail}</li>
-                                    <li>{items[0].ph}</li>
-                                    <li>{items[0].ex}</li>
-                                </ul>
+                                <p>
+                                그누보드 기반의 홈페이지 유지 보수 및 신규 사이트 구축을 주로 담당하였고, Ajax를 이용한 게시판 리뉴얼과 웹뷰 기반의 모바일 홈페이지 구축 경험이 있습니다.<br/>
+                                node기반의 CMS 유지 보수를 담당하였으며, restAPI 통신을 이용한 게시판 구축 및 관련 스크립트 모듈화 프로젝트도 진행하였습니다.<br/>
+                                다양한 프로젝트를 경험하면서 팀원들과의 소통을 중요시 여기게 되었고, 프로젝트가 종료된 후에도 유지 보수를 진행하는 노력형 개발자입니다.
+                                </p>
                             </div> 
                         </td>
                     </tr>
@@ -82,7 +80,7 @@ export default function Content(){
                       <td colSpan={"2"}                      >
                         <div className="overhidden">
                           <h3 className='fl sub_title mgt0'>Experience </h3>
-                          <a href="https://sky-soprano-139.notion.site/Experience-e94e238fe03b460fb85cd97a20da0adf?pvs=4" target='_blank' className="fr txt_point">경력 기술서</a> 
+                          <a href="https://sky-soprano-139.notion.site/Myung-ina-593705b552ac44cf948557e935e5d625?pvs=4" target='_blank' className="fr txt_point">경력 기술서</a> 
                         </div>
                         
                         <div className='mgt20 mgb20 overhidden border_l pdl10'>
@@ -90,8 +88,7 @@ export default function Content(){
                             <b>에듀라인</b><br></br><i>2018 ~ 2018</i>
                           </div>
                           <div className="fl w_60">
-                          - 사내 상품페이지 디자인 및 퍼블리싱<br></br>
-                          - 신규 사업, 이벤트 페이지 퍼블리싱
+                            사내 상품 홈페이지 구축
                           </div>
                         </div>
                         <div className='mgb20 overhidden border_l pdl10'>
@@ -99,9 +96,8 @@ export default function Content(){
                           <b>시대고시기획</b><br></br><i>2019 ~ 2021</i>
                           </div>
                           <div className="fl w_60">
-                          - 사내 상품페이지 퍼블리싱<br></br>
-                          - 신규 사업 브랜딩페이지 구축<br></br>
-                          - 사내 사이트 구조변경 및 유지보수
+                            사내 상품 홈페이지 구축 및 신규 사업 홈페이지 구축 프로젝트와 <br/>
+                            PHP기반의 Ajax API를 이용한 스크립트 개발을 위주 업무 담당
                           </div>
                         </div>
                         <div className='overhidden border_l pdl10'>
@@ -109,9 +105,8 @@ export default function Content(){
                             <b>테이크원컴퍼니</b><br></br><i>2021 ~ 2023</i>
                           </div>
                           <div className="fl w_60">
-                          - 신규사업 브랜딩페이지 구축<br></br>
-                          - CMS 유지보수 및 기능 추가<br></br>
-                          - 스크립트 모듈화
+                            사내 신규사업 브랜딩페이지 구축작업을 퍼블리셔와 협업 <br/>
+                            CMS 페이지 유지보수 작업 담당
                           </div>
                         </div>
                       </td>

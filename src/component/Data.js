@@ -1,11 +1,4 @@
 const Data = [
-    {
-        name : "명인아",
-        birthday: "1991.04.25",
-        mail:"dlsdk0425@naver.com",
-        ph:"010-9630-3090",
-        ex:"총 경력 6년"
-    },
     [
         {
             skill: 'html/css',
