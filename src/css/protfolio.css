@@ -112,6 +112,10 @@
 .subTxt{
     margin-top:10px;
 }
+.intro_txt{
+    display:inline-block;
+    vertical-align: middle;
+}
 @media screen and (max-width:1024px) {
     .worklist li{
         max-height:300px;

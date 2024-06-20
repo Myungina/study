@@ -17,6 +17,12 @@
   padding:10px 0;
   overflow:hidden;
 }
+.w_100{
+  width:100%;
+}
+.w_70{
+  width:70%;
+}
 .w_60{
   width:60%;
 }
@@ -92,7 +98,7 @@
 .pdl20{padding-left:20px;}
 
 /*text css*/
-.tc{text-align:center;}
+.tc{text-align:center; word-break: keep-all;}
 .tl{text-align:left;}
 .tr{text-align:right;}
 

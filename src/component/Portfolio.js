@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Worklist from './Worklist';
-import $ from 'jquery';
 import '../css/protfolio.css';
 
 
@@ -26,7 +25,7 @@ export default function Portfolio(){
         <div className="wrap content">
             <div className="inner">
                 <ul className='overhidden worklist'>
-                    {Worklist[1].map((it)=>(
+                    {Worklist[0].map((it)=>(
                         <li key={it.id} > 
                             <div className="img_wrap">                                
                                 <img src={it.img } alt="port_img"/>

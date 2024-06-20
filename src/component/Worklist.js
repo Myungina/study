@@ -1,18 +1,4 @@
 const Worklist=[
-    [ 
-        {
-            com_id:10,
-            name:'에듀라인'
-        },
-        {
-            com_id:20,
-            name:'시대고시기획' 
-        },
-        {
-            com_id:30,
-            name: '테이크원컴퍼니'
-        }  
-    ],
     [
     {
             id:11,
@@ -24,7 +10,7 @@ const Worklist=[
             url:[''],
             img:require('../img/portfolio.png'),
             txt:['react기반의 spa페이지']
-        },
+    },
     {
         id:10,
         title:'브랜딩페이지 게시판 모듈화',
