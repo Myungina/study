@@ -1,8 +1,7 @@
 import {BrowserRouter  as Router, Route, Routes}  from "react-router-dom";
-import react , {useEffect} from "react";
 import './App.css';
-import Main from './component/Main';
-import Portfolio  from "./component/Portfolio";
+import Main from './component/layout/Main';
+import Portfolio  from "./component/layout/Portfolio";
 
 
 function App() {

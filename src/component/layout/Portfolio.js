@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Worklist from './Worklist';
+import Worklist from '../data/Worklist';
 import '../css/protfolio.css';
 
 

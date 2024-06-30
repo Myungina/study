@@ -1,5 +1,5 @@
 import React, { useState , useEffect } from 'react';
-import Data from "./Data.js";
+import Data from "../data/Data.js";
 import styles from "../css/Content.module.css";
 import ProfileImg from "../img/profile_img.png";
 import {
