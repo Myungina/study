@@ -1,6 +1,6 @@
 .inner{
     width:100%;
-    max-width:1100px;
+    max-width:600px;
     min-width:320px;
     margin:0 auto;
     padding:10px 0;
@@ -59,6 +59,29 @@
     left:-1px;
     bottom:3px;
     animation: bounce 0.6s infinite alternate;
+}
+.intro_txt{
+    display:inline-block;
+    vertical-align: middle;
+    word-break: keep-all;
+}
+.workli{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+}
+.workli:last-child{
+    border-bottom:none
+}
+.workli > h4{
+    font-weight:600
+}
+.workli > p {
+    margin-bottom:2px;
+}
+.linkBtn{
+    display:inline-block;
+    padding:2px 4px;
+    background:#fce0f1;
 }
 @keyframes bounce{
     to{

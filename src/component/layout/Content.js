@@ -63,7 +63,7 @@ export default function Content(){
                   <img src={ProfileImg} alt='profile_img'/>
                 </li>
                 <li className="w_70 pdl10" >
-                  <p className="intro_txt">안녕하세요!<br/>
+                  <p className={styles.intro_txt}>안녕하세요!<br/>
                   저는 상품페이지 퍼블리싱을 시작으로 지금은 프론트앤드로 성장한 명인아입니다.<br/>
                   php기반의 홈페이지 유지보수와 구축을 담당하며 Ajax 데이터 통신을 이용한 개발을 하였고,
                   node기반의 CMS페이지 유지보수를 기본 업무로 사내 신규사업 브랜딩페이지 퍼블리싱과 관련 게시판 신규개발을 한 경헙이 있습니다.<br/>
