@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import styles from "../css/Content.module.css";
+import styles from "../css/Content.module.scss";
 import Worklist from '../data/Worklist';
+import { List , Text , Link} from "@chakra-ui/react"
+import { LuExternalLink } from "react-icons/lu"
 
 
 export default function Portfolio(){    
@@ -10,20 +12,26 @@ export default function Portfolio(){
     <div>
     <Header/>
     <div className={styles.inner}>
-        <ul>
+        <List.Root gap="7">
             {Worklist[0].map((it , idx) => (
-                <li key={it.id} class={styles.workli}>
-                    <h4>{idx+1}. {it.title}</h4>
+              <List.Item color="pink.400">    
+                    <Text fontWeight="bold" textStyle="xl">{it.title}</Text>
                     <p>사용 기술 : {it.skill}</p>
-                    <p>작업 내용 : {it.discription}</p>
-                    {it.git.length > 0 
-                       ?<a href={it.git} target="_blank" className={styles.linkBtn}>Git View</a>
+                    <p>작업 내용 : </p>
+                    <List.Root ps="5">
+                      {it.txt.map((txtarr , idx)=>(
+                        <List.Item>{txtarr}</List.Item>
+                      ))}   
+                        {it.git.length > 0 
+                       ?
+                      <List.Item><Link  href={it.git} >Git View<LuExternalLink /></Link ></List.Item> 
                        :null
-                    }
-                </li>
-            ))}
-            
-        </ul>
+                    }                  
+                    </List.Root>                    
+                    
+                </List.Item>
+            ))}            
+        </List.Root>
         
     </div>
 

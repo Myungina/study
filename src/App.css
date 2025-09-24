@@ -46,7 +46,7 @@ input{
 input:focus { outline: none; }
 ul, li, ol{
   position:relative;
-  list-style:none
+
 }
 button{
   background:none;

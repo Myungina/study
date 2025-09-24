@@ -1,3 +1,4 @@
+@import "/src/index.scss";
 .inner{
     width:100%;
     max-width:600px;
@@ -64,6 +65,7 @@
     display:inline-block;
     vertical-align: middle;
     word-break: keep-all;
+    @include padding-set(10px,'left')
 }
 .workli{
     padding:10px 0;
@@ -83,6 +85,12 @@
     padding:2px 4px;
     background:#fce0f1;
 }
+.detail_list{
+    padding:10px;
+}
+.detail_list li{
+    padding-left:15px;
+}
 @keyframes bounce{
     to{
         transform: translateY(-8px);
@@ -93,3 +101,9 @@
         width:100%;
     }
 }
+
+
+
+
+
+

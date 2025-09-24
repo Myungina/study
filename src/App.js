@@ -6,7 +6,6 @@ import Portfolio  from "./component/layout/Portfolio";
 
 function App() {
   return (
-
     <div className="App">      
       <Router>
         <Routes>

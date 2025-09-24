@@ -1,6 +1,6 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState  } from 'react';
 import Data from "../data/Data.js";
-import styles from "../css/Content.module.css";
+import styles from "../css/Content.module.scss";
 import ProfileImg from "../img/profile_img.png";
 import {
     Chart as ChartJS,
@@ -82,7 +82,7 @@ export default function Content(){
                     <b>에듀라인</b><br></br><i>2018 ~ 2018</i>
                   </div>
                   <div className="w_70">
-                    사내 상품 홈페이지 구축
+                    사내 상품페이지 구축
                   </div>
                 </li>
                 <li className={styles.introtable}>
@@ -101,6 +101,15 @@ export default function Content(){
                   <div className="w_70">
                     사내 신규사업 브랜딩페이지 구축작업을 퍼블리셔와 협업 <br/>
                     CMS 페이지 유지보수 작업 담당
+                  </div>
+                </li>
+                <li className={styles.introtable}>
+                <div className='w_30'>
+                    <b>시대고시기획</b><br></br><i>2024~</i>
+                  </div>
+                  <div className="w_70">
+                     관리자 페이지 유지보수<br/>
+                     사내 홈페이지 프론트단 개발
                   </div>
                 </li>
               </ul>

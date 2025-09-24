@@ -76,35 +76,35 @@
   content:'';
 }
 
-/*margin*/
-.mgt0{margin-top:0px;}
-.mgt10{margin-top:10px;}
-.mgb10{margin-bottom:10px;}
-.mgr10{margin-right:10px;}
-.mgl10{margin-left:10px;}
-.mgt20{margin-top:20px;}
-.mgb20{margin-bottom:20px;}
-.mgr20{margin-right:20px;}
-.mgl20{margin-left:20px;}
-
-/*padding*/
-.pdt10{padding-top:10px;}
-.pdb10{padding-bottom:10px;}
-.pdr10{padding-right:10px;}
-.pdl10{padding-left:10px;}
-.pdt20{padding-top:20px;}
-.pdb20{padding-bottom:20px;}
-.pdr20{padding-right:20px;}
-.pdl20{padding-left:20px;}
-
 /*text css*/
 .tc{text-align:center; word-break: keep-all;}
 .tl{text-align:left;}
 .tr{text-align:right;}
 
+@mixin margin-set($num , $type){
+  @if($type == 'top'){
+    margin-top:$num;
+  }@else if($type == 'left'){
+    margin-left:$num;
+  }@else if($type == 'bottom'){
+    margin-bottom:$num;
+  }@else if($type == 'right'){
+    margin-right:$num;
+  }
+}
+@mixin padding-set($num , $type){
+  @if($type == 'top'){
+    padding-top:$num;
+  }@else if($type == 'left'){
+    padding-left:$num;
+  }@else if($type == 'bottom'){
+    padding-bottom:$num;
+  }@else if($type == 'right'){
+    padding-right:$num;
+  }
+}
 
-
-@media screen and(max-width:520px) {
+@media (max-width:520px) {
   .App{
     width:100%;
     margin:0 auto;

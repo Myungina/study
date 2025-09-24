@@ -1,6 +1,39 @@
 const Worklist=[
     [
     {
+        id:14,
+        title:'시대에듀 사용자 페이지',
+        company:'시대고시기획',
+        skill:'php , Ajax , javascript',
+        discription:'사용자 페이지 데이터 출력작업',
+        git:'https://github.com/Myungina/study',
+        url:[''],
+        img:require('../img/portfolio.png'),
+        txt:['페이지 구조변경에 따른 데이터 출력 및 출력 조건변경','팝업, 배너 자동화 개발']
+    },
+    {
+        id:13,
+        title:'시대에듀 관리자 페이지',
+        company:'시대고시기획',
+        skill:'php , Ajax , javascript',
+        discription:'관리자 페이지 기능 개선',
+        git:'https://github.com/Myungina/study',
+        url:[''],
+        img:require('../img/portfolio.png'),
+        txt:['관리자 페이지 오류 개선', '신규 자동화 페이지 구축','유지보수']
+    },
+    {
+        id:12,
+        title:'시대에듀 JS 모듈화',
+        company:'시대고시기획',
+        skill:'javascript',
+        discription:'공통 사용 Fn 모듈화 진행',
+        git:'https://github.com/Myungina/study',
+        url:[''],
+        img:require('../img/portfolio.png'),
+        txt:['swiper slide옵션 , 이벤트 타이머 등 함수 모듈화 진행으로 접근성을 높임']
+    },
+    {
             id:11,
             title:'포트폴리오',
             company:'-',
@@ -17,7 +50,7 @@ const Worklist=[
         company:'테이크원컴퍼니',
         skill:'html , css , jQuery , node.js',
         discription:'게임 브랜딩페이지 공용게시판 신규작업',
-        git:'https://github.com/Myungina/mywork/blob/main/board.js',
+        git:'https://github.com/Myungina/mywork/tree/main/board',
         url:[''],
         img:require('../img/bptg_board.png'),
         txt:['반응형 페이지 UI작업','사내 프로젝트 브랜딩 사이트 게시판 모듈화 작업','공통 js파일을 만들어 import하고, 각 페이지에서 개별 옵션을 설정 할 수 있도록 기능 개발']
