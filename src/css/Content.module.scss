@@ -15,7 +15,6 @@
     border-bottom:1px solid #727272
 }
 .introtable{
-    display:table;
     width:100%;
     padding:5px 0;
 }
@@ -36,10 +35,12 @@
     color:#3885cd;
 }
 .subtitle{
-    margin:0 auto 5px;
     font-size:15px;
     font-weight:600;
     color:#ed4d8f;
+  }
+  .bgPink{
+    background:#ed4d8f;
   }
 .txt_point{
     float:right;
@@ -74,7 +75,7 @@
 .workli:last-child{
     border-bottom:none
 }
-.workli > h4{
+.bold{
     font-weight:600
 }
 .workli > p {

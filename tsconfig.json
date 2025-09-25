@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // Other compiler options...
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    // Add other options as recommended by Chakra UI docs
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
