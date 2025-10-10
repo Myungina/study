@@ -1,19 +1,19 @@
 import {BrowserRouter  as Router, Route, Routes}  from "react-router-dom";
-import './App.css';
+import { Box } from "@chakra-ui/react";
 import Main from './layout/Main';
 import Portfolio  from "./layout/Portfolio";
-
+import './App.css';  
 
 function App() {
   return (
-    <div className="App">      
+    <Box className="App">      
       <Router>
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/Portfolio" element={<Portfolio />}></Route>
         </Routes>
       </Router>
-    </div>
+    </Box>
   );
 }
 

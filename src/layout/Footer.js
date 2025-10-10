@@ -1,9 +1,10 @@
+import { Box } from "@chakra-ui/react";
 export default function Footer(){
     return(
-        <div className="wrap footer">
-            <div className="inner">
-                <p>Protfoilo_page</p>
+        <Box layerStyle="footer" className="footer" >
+            <div>
+                <p> ©2025 ina.  All rights Reserved.</p>
             </div>
-        </div>
+        </Box>
     )
 }
