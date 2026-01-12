@@ -2,22 +2,22 @@ const Worklist=[
     [
     {
         id:14,
-        title:'시대에듀 사용자 페이지',
+        title:'시대에듀 카테고리 메인 비쥬얼 관리페이지',
         company:'시대고시기획',
         skill:'php , Ajax , javascript',
         discription:'사용자 페이지 데이터 출력작업',
-        git:'https://github.com/Myungina/study',
+        git:'https://github.com/Myungina/mywork/tree/main/Js_module/visual_skin',
         url:[''],
         img:require('../img/portfolio.png'),
-        txt:['jquery -> vanilaJS로 변경으로 js 오류 최소화' , '사이트 공통 js 묶음' , '사용자 페이지 유지보수 자동화 적용' , 'ㄴ 담당자의 개별 관리페이지를 생성하여 유지보수 최소화']
+        txt:['카테고리 메인 배너 관리페이지' ,'ㄴ개별 유지보수 작업을 없애기 위해 구축' , 'ㄴ추후 개별 배너 관리 등 메인에 관련된 비쥬얼 부분 추가']
     },
     {
         id:13,
-        title:'시대에듀 관리자 페이지',
+        title:'시대에듀 관리자 페이지 고도화',
         company:'시대고시기획',
         skill:'php , Ajax , javascript',
         discription:'관리자 페이지 기능 개선',
-        git:'https://github.com/Myungina/study',
+        git:'',
         url:[''],
         img:require('../img/portfolio.png'),
         txt:['관리자 페이지 노후화에 따른 기능 개선' , 'ㄴ 페이지 로딩시 불필요 데이터출력으로 인해 페이지 로딩이 길고, 사용이 어려움','ㄴ데이터 조건문 변경과 api를 이용해 불필요한 데이터 삭제 및 페이지 단순화']
@@ -28,10 +28,12 @@ const Worklist=[
         company:'시대고시기획',
         skill:'javascript',
         discription:'공통 사용 Fn 모듈화 진행',
-        git:'https://github.com/Myungina/study',
+        git:'https://github.com/Myungina/mywork/tree/main/Js_module',
         url:[''],
         img:require('../img/portfolio.png'),
-        txt:['개별 페이지에 마크업된 js를 모듈화','ㄴ 이벤트 전용 js모듈을 만들어 필요시 사용할 수 있도록함']
+        txt:['개별 페이지에 마크업된 js를 모듈화','ㄴ 이벤트 전용 js모듈을 만들어 필요시 사용할 수 있도록함',
+            'jquery -> vanilaJS로 변경으로 js 오류 최소화' , '사이트 공통 js 묶음' , '사용자 페이지 유지보수 자동화 적용' , 'ㄴ 담당자의 개별 관리페이지를 생성하여 유지보수 최소화'
+        ]
     },
     {
         id:11,
