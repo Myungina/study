@@ -9,7 +9,7 @@ const Worklist=[
         git:'https://github.com/Myungina/study',
         url:[''],
         img:require('../img/portfolio.png'),
-        txt:['페이지 구조변경에 따른 데이터 출력 및 출력 조건변경','팝업, 배너 자동화 개발']
+        txt:['jquery -> vanilaJS로 변경으로 js 오류 최소화' , '사이트 공통 js 묶음' , '사용자 페이지 유지보수 자동화 적용' , 'ㄴ 담당자의 개별 관리페이지를 생성하여 유지보수 최소화']
     },
     {
         id:13,
@@ -20,7 +20,7 @@ const Worklist=[
         git:'https://github.com/Myungina/study',
         url:[''],
         img:require('../img/portfolio.png'),
-        txt:['관리자 페이지 오류 개선', '신규 자동화 페이지 구축','유지보수']
+        txt:['관리자 페이지 노후화에 따른 기능 개선' , 'ㄴ 페이지 로딩시 불필요 데이터출력으로 인해 페이지 로딩이 길고, 사용이 어려움','ㄴ데이터 조건문 변경과 api를 이용해 불필요한 데이터 삭제 및 페이지 단순화']
     },
     {
         id:12,
@@ -31,18 +31,18 @@ const Worklist=[
         git:'https://github.com/Myungina/study',
         url:[''],
         img:require('../img/portfolio.png'),
-        txt:['swiper slide옵션 , 이벤트 타이머 등 함수 모듈화 진행으로 접근성을 높임']
+        txt:['개별 페이지에 마크업된 js를 모듈화','ㄴ 이벤트 전용 js모듈을 만들어 필요시 사용할 수 있도록함']
     },
     {
-            id:11,
-            title:'포트폴리오',
-            company:'-',
-            skill:'html , css , jQuery , react',
-            discription:'개인 포트폴리오사이트',
-            git:'https://github.com/Myungina/study',
-            url:[''],
-            img:require('../img/portfolio.png'),
-            txt:['react기반의 spa페이지']
+        id:11,
+        title:'포트폴리오',
+        company:'-',
+        skill:'html , css , jQuery , react',
+        discription:'개인 포트폴리오사이트',
+        git:'https://github.com/Myungina/study',
+        url:[''],
+        img:require('../img/portfolio.png'),
+        txt:['react기반의 spa페이지']
     },
     {
         id:10,
@@ -53,7 +53,7 @@ const Worklist=[
         git:'https://github.com/Myungina/mywork/tree/main/board',
         url:[''],
         img:require('../img/bptg_board.png'),
-        txt:['반응형 페이지 UI작업','사내 프로젝트 브랜딩 사이트 게시판 모듈화 작업','공통 js파일을 만들어 import하고, 각 페이지에서 개별 옵션을 설정 할 수 있도록 기능 개발']
+        txt:['브랜딩 소개페이지 구축','게시판 연동']
     },
     {
         id:9,
@@ -86,7 +86,7 @@ const Worklist=[
         git:'',
         url:[''],
         img:require('../img/sd_book_search.png'),
-        txt:['검색 키워드 강조 스크립트','검색결과 분류']
+        txt:['단순 도서명검색 페이지 고도화 작업','검색 조건 추가 및 검색 결과 타입별 출력 및 검색어 하이라이트등 사용자 편리성을 위한 기능 개선']
     },
     {
         id:6,
@@ -97,7 +97,7 @@ const Worklist=[
         git:'https://github.com/Myungina/mywork/tree/main/myclass',
         url:[''],
         img:require('../img/no-img.png'),
-        txt:['마이 페이지  UI구조 변경 및 기존 데이터 호출 방식 수정','내 강의실 페이지 추가 및 강의 보기 단계 축소','강의상세보기 추가, 강의 진도율 Chart.js를 이용','영상 script연동','나의 쿠폰 , 적립금 페이지 분리 및 유효성 검사 추가','주소찾기 팝업창 UI 변경','게시판 추가']
+        txt:['불필요한 데이터 출력으로 인한 긴 로딩시간 , 유지보수가 어려운 단일 페이지를 개선','ㄴ각 페이지 개별화 및 해당 데이터 출력으로 로딩시간 개선' , 'ㄴ사용자 편의위주의 기능 개선']
     },
     {
         id:5,

@@ -2,6 +2,7 @@ import {BrowserRouter  as Router, Route, Routes}  from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 import Main from './layout/Main';
 import Portfolio  from "./layout/Portfolio";
+import Jsmodule  from "./layout/Jsmodule";
 import './App.css';  
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/Portfolio" element={<Portfolio />}></Route>
+          <Route path="/Jsmodule" element={<Jsmodule />}></Route>
         </Routes>
       </Router>
     </Box>

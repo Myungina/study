@@ -26,6 +26,12 @@ const timelineData = [
     index:'프론트앤드'
   },
 ]
+
+const myskill = {
+  front: ['React','Node','javascript','jQuery','html','css'],
+  back: ['mysql(5.x)' , 'php(6.x)'],
+  etc: ['Git' , 'hideSQL','photoshop']
+}
 export default function Content(){
     let [items] = useState(Data);
 
@@ -47,14 +53,14 @@ export default function Content(){
 
 
             <Box layerStyle="content">
-              <Flex  flexWrap="wrap" gap="10">
+              <Flex  flexWrap="wrap" gap="10" >
                 <Box flexGrow="1">         
                   <Card.Root layerStyle="inner">
                     <Text textStyle="pageTit">Experience </Text>       
                     <Card.Body position="relative" border="0">
                       <Timeline.Root>
-                        <Flex gap="10">
-                        {timelineData.map((row, index, arr) => {
+                        <Flex gap="10" flexWrap="wrap" w="100%">
+                        {timelineData.map((row, index) => {
                           return (
                             <Timeline.Item key={index} gap="1" >
                               <Timeline.Connector>
@@ -82,12 +88,11 @@ export default function Content(){
                 <Box flexGrow="1">
                   <List.Root bg="contentBg"  layerStyle="inner">
                     <Text textStyle="pageTit">Skill</Text>
-                    <List.Item ml="10px">
-                      <b>Front : </b> React , Node , Javascrip , JQuery , 그누보드 , SCSS 
-                    </List.Item>
-                    <List.Item ml="10px"><b>Back : </b> PHP(6.x) , restfulAPI , Ajax</List.Item>
-                    <List.Item ml="10px"><b>DB : </b>mySQL (5.x)</List.Item>
-                    <List.Item ml="10px"><b >Tool : </b>Git , Zeplin , Bitbucket, Photoshop , Illust</List.Item>
+                    {Object.entries(myskill).map(([category, items], index) => (
+                      <List.Item ml="10px" key={index}>
+                        <b>{category}</b> : {items.join(', ')}
+                      </List.Item>
+                    ))}                    
                   </List.Root>
                 </Box>                
                 

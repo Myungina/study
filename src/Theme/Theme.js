@@ -1,5 +1,4 @@
 import { createSystem, defaultConfig, defineLayerStyles, defineTextStyles } from '@chakra-ui/react';
-import { transform } from 'typescript';
 
 const textStyles = defineTextStyles({
     contentTxt: {
@@ -63,7 +62,7 @@ const layerStyles = defineLayerStyles({
     nav:{
         value:{            
             width:"max-content",
-            margin:"0 auto 30px",            
+            margin:"0 auto",            
             whiteSpace:"nowrap",
             padding:"10px 0",
              "& a":{          
@@ -128,7 +127,7 @@ const layerStyles = defineLayerStyles({
         value:{
             width:"100%",
             margin:"0 auto",
-            padding:"0 2%",
+            padding:"2%",
         }
     },    
     inner:{
@@ -141,10 +140,12 @@ const layerStyles = defineLayerStyles({
     },
     cardStyle:{
         value:{
-                boxShadow: "0px 0px 15px 4px #e4e4e4, inset 0px 5px 18px 0px rgb(246 246 246 / 75%)",
+                boxShadow: "1px 2px 2px 4px #0c3065, inset 4px 4px 6px 0px rgb(23 58 110 / 34%)",
                 background:"#ffffff",
                 padding:"5",
-                borderRadius:"10px"
+                borderRadius:"10px",
+                color:"#ffffff",
+                fontFamily:"KakaoBigFont" 
         }
     }
 })
@@ -157,12 +158,11 @@ export const theme = createSystem(defaultConfig, {
             },
             colors: {
                 mainColor: { value: "#ed4d8f" },
-                subColor: { value: "#fcc9deff" },
+                subColor: { value: "#fcc9de" },
                 textColor: { value: "#dddddd" },
                 layerBg : {value:"#f6f6f6"},
                 contentBg:{value:"#ffffff"},
-                bodyBg:{value:"#e9ecef"}
-                //navBg: { value: "#ffecd7" },
+                bodyBg:{value:"#062148"}
             },
         },
         textStyles,
@@ -190,8 +190,12 @@ export const theme = createSystem(defaultConfig, {
             }
         ],
         '@keyframes bounce': {
-                '0%': { transform: 'translateY(0)' },
-                '100%': { transform: 'translateY(-100%)' }
+                '0%': { transform: 'translateY(-100%)' },
+                '100%': { transform: 'translateY(0%)' }
+        },
+        '@keyframes cardFade': {
+                '0%': { opacity:"0"},
+                '100%': { opacity:"1"}
         },
         "@keyframes rollAndExpand" : {
             '0%': {

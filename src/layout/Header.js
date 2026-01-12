@@ -8,6 +8,7 @@ export default function Header(){
             <Flex layerStyle="nav" justify="space-around" gap="5">
                 <NavLink to="/"  className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>profile</NavLink>
                 <NavLink to="/Portfolio" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>portfolio</NavLink>
+                <NavLink to="/Jsmodule" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>Make Js</NavLink>
             </Flex>
         </Box>
     )
