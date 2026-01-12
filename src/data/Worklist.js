@@ -6,7 +6,7 @@ const Worklist=[
         company:'시대고시기획',
         skill:'php , Ajax , javascript',
         discription:'사용자 페이지 데이터 출력작업',
-        git:'https://github.com/Myungina/mywork/tree/main/Js_module/visual_skin',
+        git:'https://github.com/Myungina/mywork/tree/main/visual_skin',
         url:[''],
         img:require('../img/portfolio.png'),
         txt:['카테고리 메인 배너 관리페이지' ,'ㄴ개별 유지보수 작업을 없애기 위해 구축' , 'ㄴ추후 개별 배너 관리 등 메인에 관련된 비쥬얼 부분 추가']
